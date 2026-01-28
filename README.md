@@ -40,3 +40,7 @@ const you = prompt("Who are you?");
 console.log('Hello, ', you);
 ```
 
+Pinning:
+    When you open live share, you may see a yellow box with a username. This means you are following that user.  You should click the pin icon on hte top right of your screen to unfollow that user.
+
+
