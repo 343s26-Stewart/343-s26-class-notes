@@ -1,0 +1,19 @@
+:root {
+    --jmu-slate-gray: #333333;
+    --jmu-cs-ice-blue: #8EE4D7;
+    --jmu-purple: #450084;
+    --jmu-cs-teal: #009698;
+    --jmu-light-gold: #F4EFE1;
+}
+
+.block {
+    display: inline-block;
+    min-width: 35px;
+    min-height: 35px;
+    width: 7.5vw;
+
+    /* often you'd consider vh here, but I'm going for squares*/
+    height: 7.5vw;
+    border: 1px solid magenta;
+    user-select: none;
+}
