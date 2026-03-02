@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Card Creator</title>
+  <link rel="stylesheet" href="cards.css">
+  <link rel="icon" href="https://fav.mhciael.com/♠️">
+</head>
+<!-- 
+    Put each group of label plus input in its own div.
+    Give these divs a class of form-group.
+    Make sure to include placeholder text.
+    Make sure each element has a name and id.
+
+Add buttons at the end of the form.
+
+    Put them inside a div with the class form-buttons.
+    The preview button should have type="button".
+    The save button should have type="submit".
+    Make sure they have ids to access them in JavaScript.
+
+-->
+
+<body>
+  <main class="left-right">
+    <section id="form-area">
+      <!-- Create an HTML form inside the form-area. -->
+      <!-- Give the form the class card-form.       -->
+      <form class="card-form">
+        <!-- You will need four text inputs and a textarea, each with its own label. -->
+        <!-- Put each group of label plus input in its own div. -->
+        <!-- Give these divs a class of form-group. -->
+        <!-- Make sure to include placeholder text. -->
+        <!-- Make sure each element has a name and id. -->
+        <div class="form-group"><label for="to">To</label><input id="to" name="to" type="text"></div>
+        <div class="form-group"><label for="from">From</label><input id="from" name="from" type="text"></div>
+        <div class="form-group"><label for="title">Title</label><input id="title" name="title" type="text"></div>
+        <div class="form-group"><label for="subtitle">Subtitle</label><input id="subtitle" name="subtitle" type="text">
+        </div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message"></textarea>
+        </div>
+
+        <!-- Add buttons at the end of the form. -->
+        <!-- Put them inside a div with the class form-buttons. -->
+        <div class="form-buttons">
+          <button id="preview" type="button">Preview</button>
+          <button id="save" type="submit">Save</button>
+        </div>
+        <!-- The preview button should have type="button". -->
+        <!-- The save button should have type="submit". -->
+        <!-- Make sure they have ids to access them in JavaScript. -->
+
+      </form>
+
+    </section>
+    <section id="preview-area">
+      <div class="card-display">
+        <div class="card-page page-one">
+          <div class="title"><span class="title-text">TITLE</span></div>
+          <div class="subtitle"><span class="subtitle-text">SUBTITLE</span></div>
+        </div>
+        <div class="card-page page-two">
+          <div class="to">Dear <span class="to-text">RECIPIENT</span>,</div>
+          <div class="message"><span class="message-text">YOUR MESSAGE HERE</span></div>
+          <div class="from">Sincerely, <span class="from-text">SENDER</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="createcard.js"></script>
+</body>
+
+</html>
